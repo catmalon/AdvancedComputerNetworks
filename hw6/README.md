@@ -17,5 +17,5 @@
 4. Use “./hw6_client <SERVER_IP> <SERVER_PORT>” to connect to the server_IP with PORT
 ![image](https://user-images.githubusercontent.com/75157669/118094407-46292280-b401-11eb-8123-dd5a3e499f78.png)
 
-5. Type any message in the “Client” and the “Server” will echo in same message
+5. Type any message in the “Client” and the “Server” will echo with the same message
 ![image](https://user-images.githubusercontent.com/75157669/118091591-93a39080-b3fd-11eb-8c34-0a9891303664.png)
