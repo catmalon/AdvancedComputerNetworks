@@ -5,7 +5,7 @@
 1. Error message when the program isn’t executedby superuser privileges    
 ![image](https://user-images.githubusercontent.com/75157669/118092709-07926880-b3ff-11eb-9c3a-3fe6f14bcedb.png)
 
-2. Use “./hw6_server -help” or “./hw6_client -help” to show commands
+2. Use “./hw6_server -help” or “./hw6_client -help” to show commands      
 ![image](https://user-images.githubusercontent.com/75157669/118093048-753e9480-b3ff-11eb-8563-25601c11724c.png)
 ![image](https://user-images.githubusercontent.com/75157669/118094109-e468b880-b400-11eb-8626-02962471645d.png)
 
