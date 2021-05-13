@@ -1,0 +1,7 @@
+Ubuntu 18和20版本在使用pcap時，timeout會跑不出來。
+如以下網址說明
+https://bugs.launchpad.net/ubuntu/+source/libpcap/+bug/1825106
+
+本程式可在libpcap-dev的1.7.4版本順利執行 (Ubuntu 1604的lib)
+
+libpcap-dev/xenial-updates,xenial-updates,xenial-security,xenial-security,now 1.7.4-2ubuntu0.1 all
