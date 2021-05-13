@@ -75,7 +75,12 @@ int main(int argc, char *argv[])
 	ssize_t recv_size = 0;
 	fd_set rfds;
 
-	if (geteuid() != 0 || argc != 3 || !is_valid_ip(argv[1]) || sscanf(argv[2], "%d", &port) != 1) {
+	if ((getuid()) != 0) {
+		printf("ERROR: You must be root to use this tool!\n");
+		exit(1);
+	}
+
+	if (argc != 3 || !is_valid_ip(argv[1]) || sscanf(argv[2], "%d", &port) != 1) {
 		printf("[USAGE] ./hw6_client SERVER_IP PORT\n");
 		exit(-1);
 	}

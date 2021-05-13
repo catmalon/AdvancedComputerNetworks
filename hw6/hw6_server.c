@@ -56,7 +56,12 @@ int main(int argc, char *argv[])
 	ssize_t recv_size = 0;
 	fd_set rfds;
 
-	if (geteuid() != 0 || argc != 2 || sscanf(argv[1], "%d", &port) != 1) {
+	if ((getuid()) != 0) {
+		printf("ERROR: You must be root to use this tool!\n");
+		exit(1);
+	}
+
+	if (argc != 2 || sscanf(argv[1], "%d", &port) != 1) {
 		printf("[USAGE] ./hw6_server SERVER_PORT\n");
 		exit(-1);
 	}
